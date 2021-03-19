@@ -21,7 +21,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg  fixed-top">
         <!-- Brand -->
         <a class="navbar-brand" href="#"> <img src="images/abstract-cuboid-building-4519ld.png" width="60px" height="50px" class="rounded-circle" alt="Cinque Terre">
         </a>
@@ -32,25 +32,27 @@
         </button>
 
         <!-- Navbar links -->
+
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="nav-top">
             <ul class="navbar-nav ">
                 <li class="nav-item ">
-                    <a class="nav-link" href="Home.html">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Register</a>
+                    <a class="nav-link" href="#registration">Register</a>
                 </li>
             </ul>
-
+        </div>
         </div>
     </nav>
     <div class="heading">
     <div class="mt-10 card bg-danger">
         <div class="card-body text-center text-white">
-            <p class="card-text"><h1 >Some text inside the fourth card</h1></p>
+            <p class="card-text"><h1 class="text-center">Welcome</h1></p>
         </div>
     </div>
     </div>
@@ -109,13 +111,56 @@
 <div class="bottom-nav">
 <ul class="nav flex-column">
     <li class="nav-item">
-        <a class="nav-link text-white" href="#">Home</a>
+        <a class="nav-link text-white" href="">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="#">About</a>
+        <a class="nav-link text-white" href="">About</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="#">Contact</a>
+        <!-- Button to Open the Modal -->
+
+        <a class="nav-link text-white" data-toggle="modal" data-target="#myModal" href="">Contact</a>
+
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content ">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-danger text-white text-center">
+                        <h4 class="modal-title">Contact</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#myModal">Send</button>
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </li>
 </ul>
 </div>
@@ -127,11 +172,11 @@
         <form class="form" action="/action_page.php">
             <div class="form-group">
                 <label for="email">Email address:</label>
-                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                <input type="email" class="form-control" placeholder="Enter email" >
             </div>
             <div class="form-group">
                 <label for="pwd">Password:</label>
-                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                <input type="password" class="form-control" placeholder="Enter password" >
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
@@ -149,6 +194,20 @@
     <div class="card-body">
     </div>
 </div>
+</div>
+<div id="registration">
+<form class="register">
+    <label>First Name :</label>
+    <input type="text" placeholder="First Name"></br>
+    <label>Last Name :</label>
+    <input type="text" placeholder="Last Name"></br>
+    <label class="email">Email :</label>
+    <input type="email" placeholder="example@gmail.com"></br>
+    <label class="password-label">Password :</label>
+    <input class="password" type="password"></br>
+    <input class="submit" type="submit"value="Create Account"></br>
+    <input class="sign-in" type="submit" value="Sign in">
+</form>
 </div>
 <footer><p> ©2021 All Rights Reserved.Corporation with MyBook™</p></footer>
 </body>

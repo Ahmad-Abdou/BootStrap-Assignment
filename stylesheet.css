@@ -2,64 +2,136 @@ html, body{
     width: 1024px;
     min-height: 500px;
 }
+
 nav{
     width: 1024px;
+    background-color: rgba(1, 124, 152,0.7);
+}
+
+.navbar-brand{
+    transition: 3s;
+}
+.navbar-brand:hover{
+    transform: rotate3d(0,0,5,360deg);
+}
+.nav-top ul li a{
+  margin-left: 150px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    transition: width 2s , height 1s, transform 1.5s;
+}
+
+.nav-top ul li a:hover{
+    color: gold;
+    transform: scale(1.5);
 }
 .heading{
     margin-top: 90px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
-
+.carousel-inner{
+    position: relative;
+}
 .Our-goal{
     width: 600px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 425px;
 
 }
 .information{
     width: 305px;
-    position: relative;
-    bottom: 259px;
+    position: absolute;
     margin-left: 115px;
+    margin-top: -259px;
+
 
 }
 .bottom-nav{
-    position: relative;
-    bottom: 519px;
+    position: absolute;
     width: 90px;
     border: 2px solid black;
     border-radius: 6px;
     background-color: rgba(255,0,0,0.5);
     text-align: center;
-    margin-left: 10px;
+    margin-left: 4px;
+    margin-top: -272px;
 }
 .bottom-nav ul{
-    padding-top: 115px;
-
+    padding-top: 78px;
 }
+
 .bottom-nav ul li {
-    margin-bottom: 100px;
+    margin-bottom: 78px;
 }
 .bottom-nav ul li a{
-    margin-bottom: 100px;
+    margin-bottom: 78px;
+    transition: width 1.5s, height 1.5s, transform 1.5s;
+}
+.bottom-nav ul li a:hover{
+
+    transform: rotate(90deg);
+
 }
 .contact{
-position: relative;
+position: absolute;
     bottom: 1087px;
     left: 115px;
 }
 .bottom-img{
-    position: relative;
+    position: absolute;
     bottom: 1657px;
     left: 626px;
 }
+
+.register{
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    width: 30%;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 20px;
+
+}
+label-register{
+    color :white;
+    font-size: 20px;
+}
+input{
+    border-radius: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: grey;
+    padding: 10px;
+    margin: 5px;
+}
+.email{
+    margin-left: 42px;
+}
+.submit{
+    background-color: crimson;
+    color: white;
+}
+.sign-in{
+    background-color: #7eff22;
+    color: white;
+}
+.password-label{
+    margin-left: 15px;
+}
 footer{
     background-color: rgba(117, 117, 117, 0.5);
-
     text-align: center;
     border: 2px solid rgba(117, 117, 117, 0.5);
     border-radius: 5px;
+    position: relative;
+    bottom: -400px;
 }
 footer p{
-    margin-top: 15px;
+    margin-top: 20px;
 }
